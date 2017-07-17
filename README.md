@@ -19,7 +19,7 @@ Instructions for all these steps are provided in this README.
 * Concurrent EXCI requests into CICS
 
 ## Sample applications
-* To be confirmed
+* [https://github.com/cicsdev/cics-nodejs-exci-webapp-sample](https://github.com/cicsdev/cics-nodejs-exci-webapp-sample)
 
 ## Pre-requisites
 * IBM CICS Transaction Server for z/OS (CICS) V5.4 - you may run the cics-exci node against a pre-V5.4 CICS region, however the node module utilises EXCI Channels and Containers functionality implemented in CICS V5.4. As such the SDFHEXCI V5.4 library must be in your STEPLIB during execution.
