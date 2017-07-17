@@ -17,7 +17,7 @@
   },
   "bundledDependencies":["node-pre-gyp"],
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build"
+    "install": "node_modules/node-pre-gyp/bin/node-pre-gyp install --fallback-to-build"
   },
   "binary": {
     "module_name": "cics-exci-bindings",
