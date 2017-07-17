@@ -3,7 +3,7 @@ Sample Node.js for z/OS node module demonstrating how to access CICS from z/OS U
 
 __Important:__ This cics-exci node module is provided as a SAMPLE and is intended __only for internal use for evaluation purposes and not for use in a production environment__. IBM provides the information and node module without obligation of support and “as is” without warranty of any kind, under the Apache 2.0 license.
 
-To get started with this sample, it is recommended you download and install the sample WebApp, which can be found here: [https://github.com/cicsdev/cics-nodejs-exci-webapp-sample](https://github.com/cicsdev/cics-nodejs-exci-webapp-sample). This sample application will download and install the cics-exci node module as part of it's installation process. Alternatively, to use this sample, you can Install manually, using the instructions below.
+To get started with this sample, it is recommended you download and install the sample WebApp, which can be found here: [https://github.com/cicsdev/cics-nodejs-exci-webapp-sample](https://github.com/cicsdev/cics-nodejs-exci-webapp-sample). This sample application will explain how to use this sample node module, as well as showing example usage. Alternatively, to use this sample, you can Install manually, using the instructions below.
 
 Whichever installation method you use, you will also need to:
 1.	Configure EXCI in your CICS region
