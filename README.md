@@ -28,11 +28,28 @@ Instructions for all these steps are provided in this README.
 
 ## Installation
 
+### Cloning GitHub repository
+
+You will first have to clone this GitHub repository onto z/OS. When cloning the GitHub repo, you have two options. Firstly, if possible, use the Git client for z/OS available for download from the [Rocket Software Open Source Tools website](http://www.rocketsoftware.com/zos-open-source/tools).
+
+Alternatively download zipped repo, or clone, onto your local workstation and transfer the files to z/OS. Take care when transferring the files and ensure any file conversions happen as expected. Any zip files should be transferred as binary.
+
+### Installing the sample
+
+To install this sample, from within the repository's root directory, run:
+
 ```bash
-$ npm install cics-exci
+$ npm install
 ```
 
-The node module includes a Node.js Native Add-on used to access EXCI functionality. This Native Add-on is supplied as a prebuilt binary hosted in this GitHub repository, and downloaded at install time. The code is also supplied in the GitHub repository and can be built manually. For instructions on building the Native Add-on see the instructions at the bottom of this page.
+This will pull down all dependencies and install. Once the installation is done copy the contents of this directory into the node_modules directory for any Node.js application that needs to use it. For example:
+
+```bash
+$ mkdir /u/user/myNodeApp/node_modules/cics-exci/
+$ cp -R * /u/user/myNodeApp/node_modules/cics-exci/
+```
+
+__Note:__ The node module includes a Node.js Native Add-on used to access EXCI functionality. This Native Add-on is supplied as a prebuilt binary hosted in this GitHub repository, and downloaded at install time. The code is also supplied in the GitHub repository and can be built manually. For instructions on building the Native Add-on see the instructions at the bottom of this page.
 
 ## Using the sample
 
