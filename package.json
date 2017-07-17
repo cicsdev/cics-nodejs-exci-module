@@ -1,0 +1,30 @@
+{
+  "name": "cics-exci",
+  "version": "0.1.0",
+  "description": "CICS sample node for EXCI",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cicsdev/cics-nodejs-exci-module.git"
+  },
+  "main": "cics-exci.js",
+  "dependencies": {
+    "node-pre-gyp": "0.6.36",
+    "bindings": "~1.2.1",
+    "nan": "^2.0.0",
+    "child_process": "latest",
+    "path": "latest"
+  },
+  "bundledDependencies":["node-pre-gyp"],
+  "scripts": {
+    "install": "node-pre-gyp install --fallback-to-build"
+  },
+  "binary": {
+    "module_name": "cics-exci-bindings",
+    "module_path": "./lib/cics-exci-bindings/",
+    "host": "https://github.com/cicsdev/cics-nodejs-exci-module/releases/download/",
+    "remote_path": "{version}"
+  },
+  "os": [ "os390" ],
+  "gypfile": true
+}
