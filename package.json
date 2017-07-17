@@ -1,6 +1,6 @@
 {
   "name": "cics-exci",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CICS sample node for EXCI",
   "license": "Apache-2.0",
   "repository": {
