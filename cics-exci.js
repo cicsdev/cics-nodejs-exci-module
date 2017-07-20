@@ -14,7 +14,7 @@ function cicsEXCI() {
   return this;
 }
 
-cicsEXCI.prototype.connect = function(next) {
+cicsEXCI.prototype.create = function(next) {
   const n = cp.fork(join(__dirname, './cics-exci-process.js'), [], { stdio: ['ignore', 'ignore', 'ignore', 'ipc'] });
   this.cicsproc = n;
   n.on('message', function(m) {
@@ -24,7 +24,6 @@ cicsEXCI.prototype.connect = function(next) {
       this.next(null, m.data);
     }
   });
-  console.log("CICS process started successfully! PID: ", this.cicsproc.pid);
   next();
 }
 
@@ -46,7 +45,7 @@ cicsEXCI.prototype.getContainer = function(outputdata, next) {
   n.send({"function": "GET", "data": outputdata});
 }
 
-cicsEXCI.prototype.close = function() {
+cicsEXCI.prototype.dispose = function() {
   this.cicsproc.kill();
 }
 
