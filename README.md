@@ -1,9 +1,9 @@
-# cics-nodejs-exci-module
+# cics-exci Node.js module
 Sample Node.js for z/OS node module demonstrating how to access CICS from z/OS Unix System Services (USS) using the external CICS interface (EXCI)
 
 __Important:__ This cics-exci node module is provided as a SAMPLE and is intended __only for internal use for evaluation purposes and not for use in a production environment__. IBM provides the information and node module without obligation of support and “as is” without warranty of any kind, under the Apache 2.0 license.
 
-To get started with this sample, it is recommended you download and install the sample web app, which can be found here: [https://github.com/cicsdev/cics-nodejs-exci-webapp-sample](https://github.com/cicsdev/cics-nodejs-exci-webapp-sample). Follow the instructions for the web app for use of this node module with an application. Alternatively, to use this sample, you can Install manually, using the instructions below.
+To get started with this sample, it is recommended you download and install the sample web app, which can be found here: [https://github.com/cicsdev/cics-nodejs-exci-webapp-sample](https://github.com/cicsdev/cics-nodejs-exci-webapp-sample). Follow the instructions for the web app for use of this node module with an application. Alternatively, to use this sample, you can install using the instructions below.
 
 Whichever installation method you use, you will also need to:
 1.	Configure EXCI in your CICS region
@@ -28,13 +28,28 @@ Instructions for all these steps are provided in this README.
 
 ## Installation
 
-### Cloning GitHub repository
+```bash
+$ npm install cics-exci
+```
+
+Or include as a dependency in package.json
+
+### Manual installation
+
+If you would like to install the cics-exci module from source you will need to complete the following steps:
+1. Clone GitHub repository
+1. Install the sample
+1. Use in Node.js application
+
+Instructions for all these steps are provided below.
+
+#### Cloning GitHub repository
 
 You will first have to clone this GitHub repository onto z/OS. When cloning the GitHub repo, you have two options. Firstly, if possible, use the Git client for z/OS available for download from the [Rocket Software Open Source Tools website](http://www.rocketsoftware.com/zos-open-source/tools).
 
 Alternatively download zipped repo, or clone, onto your local workstation and transfer the files to z/OS. Take care when transferring the files and ensure any file conversions happen as expected. Any zip files should be transferred as binary.
 
-### Installing the sample
+#### Installing the sample
 
 To install this sample, from within the repository's root directory, run:
 
@@ -42,7 +57,11 @@ To install this sample, from within the repository's root directory, run:
 $ npm install
 ```
 
-This will pull down all dependencies and install. Once the installation is done copy the contents of this directory into the node_modules directory for any Node.js application that needs to use it. For example:
+This will pull down all dependencies and install.
+
+#### Use in Node.js application
+
+Once the installation is done copy the contents of this directory into the node_modules directory for any Node.js application that needs to use it. For example:
 
 ```bash
 $ mkdir /u/user/myNodeApp/node_modules/cics-exci/
