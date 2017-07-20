@@ -163,3 +163,6 @@ make: Leaving directory '/u/user/GitHub/cics-nodejs-exci-module/build'
 cics-exci@0.1.0 /u/user/GitHub/cics-nodejs-exci-module
 ```
 This has manually built the node module, which can now be used in a Node.js application hosted in z/OS batch.
+
+## License
+This project is licensed under [Apache License Version 2.0](LICENSE).
