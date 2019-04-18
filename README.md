@@ -23,7 +23,7 @@ Instructions for all these steps are provided in this README.
 
 ## Pre-requisites
 * IBM CICS Transaction Server for z/OS (CICS) V5.4 - you may run the cics-exci node against a pre-V5.4 CICS region, however the node module utilises EXCI Channels and Containers functionality implemented in CICS V5.4. As such the SDFHEXCI V5.4 library must be in your STEPLIB during execution.
-* IBM SDK for Node.js - z/OS, beta 2 - [Download](https://developer.ibm.com/node/sdk/ztp/)
+* [IBM SDK for Node.js - z/OS](https://developer.ibm.com/node/sdk/ztp/)
   * __Note:__ ensure that all setup has been completed before you try to use the cics-exci sample node. If you would like to build the cics-exci code, you will also need to install all prerequisites for compiling Node.js Native Add-ons, as described below. 
 
 ## Installation
