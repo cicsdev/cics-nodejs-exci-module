@@ -106,14 +106,14 @@ For convenience, the Native Add-on portion of the cics-exci, which includes usin
 ### Pre-reqs
 * cics-exci-64bit-connector - the sample EXCI 64-bit connector is included in the node module as a precompiled static library archive. If you would like to see the code for this, extend, or troubleshoot with the connector, you can find the code on GitHub here: [cics-exci-64bit-connector](https://github.com/cicsdev/cics-exci-64bit-connector)
 * Node.js Native Add-on support
-  * Python v2.7.6 - [available as an open source ported language from Rocket Software](http://www.rocketsoftware.com/zos-open-source)
+  * Python v2.7.13 - [available as an open source ported language from Rocket Software](http://www.rocketsoftware.com/zos-open-source)
   * Make v4.0 or higher - [available as an open source ported tool from Rocket Software](http://www.rocketsoftware.com/zos-open-source/tools)
   * node-gyp - required to build a Node.js Native Add-on. Install by running `npm install -g node-gyp`
   * nan (Native Abstractions for Node.js) - required for Node.js Native Add-on development. Install by running `npm install nan`
 
 ### Building and installing the Native Add-on
 
-Before building you need to set the `LD_FLAGS` environment variable to point to the SDFHEXCI V5.4 library. You can you this as follows:
+Before building you need to set the `LDFLAGS` environment variable to point to the SDFHEXCI library from CICS TS V5.4 or above. You can you this as follows:
 
 ```bash
 $ export LDFLAGS=\"-l//\'CICTS54.CICS.SDFHEXCI\'\"
